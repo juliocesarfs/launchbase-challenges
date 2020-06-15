@@ -10,7 +10,7 @@ const user = {
  */
 function validateTransaction(transactionType) {
   let isValidTransaction = true;
-  console.log(transactionType)
+
   try {
 
     if (transactionType !== 'credit' && transactionType !== 'debit')
@@ -41,10 +41,27 @@ function createTransaction(transaction) {
 }
 
 function getHigherTransactionByType(transactionType) {
+  const isValid = validateTransaction(transactionType);
+  let higherTransaction = {type: null, value: null};
 
+  if (isValid) {
+    
+    for(let transaction of user.transactions) {
+      if (transaction.type == transactionType && transaction.value > higherTransaction.value)
+        higherTransaction = transaction;
+    }
+  }
+
+  return higherTransaction;
 }
 
+createTransaction({ type: 'credit', value: 15 });
 createTransaction({ type: 'credit', value: 50.5 });
+createTransaction({ type: 'debit', value: 25 });
+
+console.log(getHigherTransactionByType('sad'));
+
+
 
 console.table(user);
 

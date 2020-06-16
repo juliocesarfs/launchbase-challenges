@@ -1,5 +1,6 @@
-<img src="launchbase-logo.png">
----
+<h1 align="center">
+  <img src="launchbase-logo.png">
+</h1>
 
 # :book: Index
 - [About](#-about)

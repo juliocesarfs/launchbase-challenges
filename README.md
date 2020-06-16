@@ -3,9 +3,9 @@
 </h1>
 
 # :book: Index
-- [About](#-about)
-- [Technologies used](#-technologies-used)
-- [What i have learned](#-what-i-have-learned)
+- [About](#clipboard-about)
+- [Technologies used](#computer-technologies-used)
+- [What i have learned](#fire-what-i-have-learned)
 - [How to download and execute the project](#-how-to-download-and-execute-the-project)
 
 ---

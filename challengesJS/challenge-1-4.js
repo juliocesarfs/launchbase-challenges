@@ -55,13 +55,25 @@ function getHigherTransactionByType(transactionType) {
   return higherTransaction;
 }
 
+function getAverageTransactionValue() {
+  let sumTransactions = 0;
+  
+  for (let transaction of user.transactions) {
+    sumTransactions += transaction.value;
+  }
+
+  const average = sumTransactions / user.transactions.length;
+
+  return average;
+}
+
 createTransaction({ type: 'credit', value: 15 });
 createTransaction({ type: 'credit', value: 50.5 });
 createTransaction({ type: 'debit', value: 25 });
 
-console.log(getHigherTransactionByType('sad'));
+//console.log(getHigherTransactionByType('sad'));
 
-
+console.log(getAverageTransactionValue());
 
 console.table(user);
 

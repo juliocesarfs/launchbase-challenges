@@ -1,3 +1,16 @@
+/**
+ * Desafios para fortalecer alguns conceitos, entre eles:
+
+    Booleanos;
+    Organização;
+    Padronização;
+    Escrita.
+
+  INTRODUÇÃO:
+  Crie um programa para realizar operações bancárias na conta de um usuário.
+ */
+
+
 const user = {
   name: 'Júlio',
   transactions: [],

@@ -1,3 +1,15 @@
+/**
+ * Desafios para fortalecer alguns conceitos, entre eles:
+
+    Funções e métodos;
+    Estruturas de repetição;
+    Escopos.
+
+  Usuários e tecnologias
+ */
+
+
+
 /*const users = [
   { name: 'Júlio', technologies: ['Python', 'JavaScript'] },
   { name: 'Jasmine', technologies: ['JavaScript', 'CSS'] },

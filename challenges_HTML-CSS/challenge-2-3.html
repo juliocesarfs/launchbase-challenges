@@ -3,6 +3,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles/styles-2-3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <header>
@@ -18,7 +20,7 @@
 
     <section class="courses">
 
-      <div class="course">
+      <div class="course" id="starter">
         <div class="course-starter">
           <div class="course-img">
             <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="">
@@ -32,10 +34,10 @@
             <p>5 modulos</p>
             <p class="course-price">Free</p>
           </div>
-      </div>
+        </div>
       </div>
 
-      <div class="course">
+      <div class="course" id="launchbase">
         <div class="course-launchbase">
           <div class="course-img">
             <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="">
@@ -52,7 +54,7 @@
         </div>
       </div>
 
-      <div class="course">
+      <div class="course" id="gostack">
         <div class="course-gostack">
           <div class="course-img">
             <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="">
@@ -69,5 +71,19 @@
         </div>
       </div>
     </section>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <a class="close-modal">
+          <i class="material-icons">close</i>
+        </a>
+        <div class="modal-content">
+          <iframe src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
   </body>
 </html>

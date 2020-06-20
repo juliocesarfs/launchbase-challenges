@@ -4,6 +4,7 @@
     --color-green: #50fa7b;
     --color-grey: rgba(255, 255, 255, 0.233);
     --color-purple: #7159c1;
+    --color-yellow: rgb(233, 174, 10);
 }
 
 body {
@@ -71,17 +72,17 @@ header a:hover {
 
 .course-starter:hover {
   border-color: var(--color-purple);
-  transition: 350ms;
+  transition: 550ms;
 }
 
 .course-launchbase:hover {
-  border-color: rgb(168, 114, 12);
-  transition: 350ms;
+  border-color: var(--color-yellow);
+  transition: 550ms;
 }
 
 .course-gostack:hover {
   border-color: var(--color-green);
-  transition: 350ms;
+  transition: 550ms;
 }
 
 .description {
@@ -98,7 +99,7 @@ header a:hover {
 .launchbase {
   font-weight: bold;
   line-height: 0px;
-  color: var(--color-green)
+  color: var(--color-yellow)
 }
 
 .gostack {

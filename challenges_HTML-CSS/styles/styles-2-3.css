@@ -45,12 +45,43 @@ header a:hover {
   margin: 0 auto;
 }
 
-.course {
+.course-starter {
   background-color: rgb(26, 24, 24);
   padding: 15px;
   text-align: center;
-  border: 1px solid var(--color-grey);
+  border: 2px solid var(--color-grey);
   border-radius: 20px;
+}
+
+.course-launchbase {
+  background-color: rgb(26, 24, 24);
+  padding: 15px;
+  text-align: center;
+  border: 2px solid var(--color-grey);
+  border-radius: 20px;
+}
+
+.course-gostack {
+  background-color: rgb(26, 24, 24);
+  padding: 15px;
+  text-align: center;
+  border: 2px solid var(--color-grey);
+  border-radius: 20px;
+}
+
+.course-starter:hover {
+  border-color: var(--color-purple);
+  transition: 350ms;
+}
+
+.course-launchbase:hover {
+  border-color: rgb(168, 114, 12);
+  transition: 350ms;
+}
+
+.course-gostack:hover {
+  border-color: var(--color-green);
+  transition: 350ms;
 }
 
 .description {
@@ -84,7 +115,7 @@ header a:hover {
 
 .course-price {
   color: black;
-  font-style: bold;
+  font-weight: bold;
   background-color: var(--color-green);
   border-radius: 20px;
   width: 70px;

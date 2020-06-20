@@ -13,6 +13,23 @@ body {
 }
 
 header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+header a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: var(--color-green);
+    transition: 200ms;
+}
+
+.header {
     background-color: rgba(5, 3, 3, 0.26);
     padding: 20px 20px 0px;
     text-align: center;
@@ -22,14 +39,14 @@ header {
     border: 2px solid var(--color-grey);
 }
 
-header img {
+.header img {
     border: 2px solid var(--color-green);
     border-radius: 50%;
     height: 150px;
     margin-bottom: -10px;
 }
 
-header h1 {
+.header h1 {
     font-size: 30px;
     font-weight: bold;
     color: var(--color-green);

@@ -21,6 +21,7 @@ document.querySelector('.close-modal').addEventListener('click', function() {
   modalOverlay.classList.remove('active');
   modalOverlay.querySelector('iframe').src = '';
   modal.classList.remove('maximize');
+  document.querySelector('#fullscreen').textContent = 'fullscreen';
 
 });
 
@@ -29,9 +30,13 @@ document.querySelector('.close-modal').addEventListener('click', function() {
 document.querySelector('.maximize-modal').addEventListener('click', function() {                                  
   if(modal.classList.contains('maximize')) {
     modal.classList.remove('maximize');
+
+    document.querySelector('#fullscreen').textContent = 'fullscreen';
   }
   else {
     modal.classList.add('maximize');
+
+    document.querySelector('#fullscreen').textContent = 'fullscreen_exit';
   }
   
 });

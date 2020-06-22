@@ -5,8 +5,7 @@
 # :book: Index
 - [About](#clipboard-about)
 - [Technologies used](#computer-technologies-used)
-- [What i have learned](#fire-what-i-have-learned)
-- [How to download and execute the project](#-how-to-download-and-run-the-project)
+- [How to download and run this project](#-how-to-download-and-run-this-project)
 
 ---
 
@@ -20,23 +19,20 @@ this README is still in progress and will be updated according to my evolution i
 ## :computer: Technologies used
 - [JavaScript](https://www.javascript.com/)
 - [NodeJS](https://nodejs.org/en/)
+- [HTML](https://www.w3.org/TR/html52/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 
 ---
 
-## :fire: What I have learned
+### 📁 How to download and run this project
 
-#### JavaScript:
-- Functions and methods;
-- Repetition structures;
-- Scopes;
-- Booleans;
-- Organization;
-- Standardization;
-- Writing.
-
----
-
-### 📁 How to download and run the project
+you will need [NodeJS](https://nodejs.org/en/) in your computer
+```bash
+  #run this command to confirm if you have Node
+  node -v
+  #or
+  node --version
+```
 
 ```bash
   # clone the repository

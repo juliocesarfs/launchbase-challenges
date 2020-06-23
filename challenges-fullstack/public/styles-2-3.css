@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-green: #50fa7b;
+    --color-grey: rgba(255, 255, 255, 0.233);
+    --color-purple: #7159c1;
+    --color-yellow: rgb(233, 174, 10);
+}
+
+body {
+    background-color: rgb(36, 34, 34);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 2px solid var(--color-grey);
+  padding-bottom: 20px;
+}
+
+header a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  color: var(--color-green);
+  transition: 200ms;
+}
+
+.wrapper {
+  text-align: center;
+  font-size: 32px;
+}
+
+.courses {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.course {
+  cursor: pointer;
+}
+
+.course-starter {
+  height: 455px;
+  background-color: rgb(26, 24, 24);
+  padding: 15px;
+  text-align: center;
+  border: 2px solid var(--color-grey);
+  border-radius: 20px;
+}
+
+.course-launchbase {
+  height: 455px;
+  background-color: rgb(26, 24, 24);
+  padding: 15px;
+  text-align: center;
+  border: 2px solid var(--color-grey);
+  border-radius: 20px;
+}
+
+.course-gostack {
+  height: 455px;
+  background-color: rgb(26, 24, 24);
+  padding: 15px;
+  text-align: center;
+  border: 2px solid var(--color-grey);
+  border-radius: 20px;
+}
+
+.course-starter:hover {
+  border-color: var(--color-purple);
+  transition: 550ms;
+}
+
+.course-launchbase:hover {
+  border-color: var(--color-yellow);
+  transition: 550ms;
+}
+
+.course-gostack:hover {
+  border-color: var(--color-green);
+  transition: 550ms;
+}
+
+.description {
+  margin-top: 70px;
+  min-width: 280px;
+}
+
+.starter {
+  font-weight: bold;
+  line-height: 0px;
+  color: var(--color-purple);
+}
+
+.launchbase {
+  font-weight: bold;
+  line-height: 0px;
+  color: var(--color-yellow)
+}
+
+.gostack {
+  font-weight: bold;
+  line-height: 0px;
+  color: var(--color-green);
+}
+
+.course-modules {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.course-price {
+  color: black;
+  font-weight: bold;
+  background-color: var(--color-green);
+  border-radius: 20px;
+  width: 70px;
+  margin-left: 40px;
+}
+
+/*=== MODAL ===*/
+
+.modal-overlay {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: grey;
+  width: 50%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  cursor: pointer;
+  
+}
+
+.modal .maximize-modal {
+  color: black;
+  position: absolute;
+  right: 30px;
+  top: 3px;
+  cursor: pointer;
+}
+
+/*=== MODAL.ACTIVE===*/
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 30px;
+}
+
+/*=== MODAL.MAXIMIZE===*/
+
+.modal.maximize {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  margin: 0vh auto;
+  position: relative;
+}
+
+
+
+
+
+
+
+

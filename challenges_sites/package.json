@@ -2,11 +2,15 @@
   "name": "challenges_sites",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts.js",
+  "main": "server.js",
   "scripts": {
-    "start": "npm start"
+    "start": "nodemon start"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

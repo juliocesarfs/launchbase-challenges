@@ -5,5 +5,8 @@
   "main": "scripts.js",
   "scripts": {
     "start": "npm start"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

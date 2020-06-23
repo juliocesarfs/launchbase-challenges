@@ -1,0 +1,9 @@
+{
+  "name": "challenges_sites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "npm start"
+  }
+}

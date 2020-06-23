@@ -5,7 +5,9 @@
 # :book: Index
 - [About](#clipboard-about)
 - [Technologies used](#computer-technologies-used)
-- [How to download and run this project](#-how-to-download-and-run-this-project)
+* [How to download and run this project](#📁-how-to-download-and-run-this-project)
+  - [challengesJS tutorial](#-challengesJS-tutorial)
+  - [challenges-fullstack tutorial](#-challenges-fullstack-tutorial)
 
 ---
 
@@ -21,6 +23,8 @@ this README is still in progress and will be updated according to my evolution i
 - [NodeJS](https://nodejs.org/en/)
 - [HTML](https://www.w3.org/TR/html52/)
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [nunjucks](https://mozilla.github.io/nunjucks/)
+- [nodemon](https://nodemon.io/)
 
 ---
 
@@ -38,13 +42,32 @@ you will need [NodeJS](https://nodejs.org/en/) in your computer
   # clone the repository
   $ git clone https://github.com/Crucciatus/launchbase-challenges.git
 ```
-To run the code in exercises that contain **only JavaScript** it is necessary to navigate to the file folder and run
+
+### challengesJS tutorial
+To run the code in exercises that contain **only JavaScript** it is necessary to navigate to the file folder and run:
 ```bash
-  node <file_name.js>
+  $ node <file_name.js>
 ``` 
+
+### challenges-fullstack tutorial
+To run the project **challenges-fullstack** it is necessary to navigate to the file folder (challenges-fullstack) and run:
+```bash
+  # Install dependences
+  npm install
+```
+**To start the server:**
+```bash
+  npm start
+```
+> The project will default to port 5000
+
+**Acess in your browser:**
+```
+localhost:5000
+```
 
 ---
 
-Being developed :heart: exclusively by ***Júlio César***
+Being developed :purple_heart: exclusively by ***Júlio César***
  
 

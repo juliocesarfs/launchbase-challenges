@@ -13,11 +13,7 @@
     </div>
 
     <div class="description">
-      <p>
-        <a href="https://rocketseat.com.br">RocketSeat</a> é uma empresa de formação de programadores web
-        focada especialmente na "mão na massa", seu objetivo é preparar programadores para 
-        o mercado de trabalho
-      </p>
+      <p>{{ about.description }}</p>
     </div>
 
     <div class="border"></div>
@@ -26,18 +22,16 @@
       <div class="list">
         <h3>Nossas tecnologias:</h3>
         <ul>
-            <li><a href="https://www.javascript.com" target="_blank">JavaScript</a></li>
-            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a></li>
-            <li><a href="https://nodejs.org/en/" target="_blank">NodeJS</a></li>
-            <li><a href="https://pt-br.reactjs.org/" target="_blank">React</a></li>
-            <li><a href="https://reactnative.dev/" target="_blank">React Native</a></li>
+          {% for tech in about.tecList %}
+            <li><a href="{{ tech.url }}" target="_blank">{{ tech.name }}</a></li>
+          {% endfor %}
         </ul>
       </div>
 
       <div class="links">
-        <a href="https://github.com/Rocketseat" target="_blank">Github</a><br>
-        <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br" target="_blank">Instagram</a><br>
-        <a href="https://www.facebook.com/rocketseat/" target="_blank">Facebook</a><br>
+        {% for socialNetwork in about.socialList %}
+          <a href="{{ socialNetwork.url }}" target="_blank">{{ socialNetwork.name }}</a><br>
+        {% endfor %}
       </div>
   </div>
 

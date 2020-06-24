@@ -8,11 +8,29 @@ server.use(express.static('public'));
 server.set('view engine', 'njk');
 
 nunjucks.configure('views', {
-  express:server
+  express:server,
+  autoescape: false
 });
 
 server.get('/', function(req, res) {
-  return res.render('about');
+  const about = {
+    description: '<a href="https://rocketseat.com.br">RocketSeat</a> é uma empresa de formação de programadores web focada especialmente na "mão na massa", seu objetivo é preparar programadores para o mercado de trabalho',
+    tecList: [
+      { name: 'JavaScript', url: 'https://www.javascript.com' },
+      { name: 'HTML', url: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML' },
+      { name: 'NodeJS', url: 'https://nodejs.org/en/' },
+      { name: 'React', url: 'https://pt-br.reactjs.org/' },
+      { name: 'React Native', url: 'https://reactnative.dev/' }
+    ],
+    socialList: [
+      { name: 'Github', url: 'https://github.com/Rocketseat' },
+      { name: 'Instagram', url: 'https://www.instagram.com/rocketseat_oficial/?hl=pt-br' },
+      { name: 'Facebook', url: 'https://www.facebook.com/rocketseat/' }
+    ]
+  }
+
+
+  return res.render('about', { about });
 });
 
 server.get('/courses', function(req, res) {

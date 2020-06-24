@@ -1,5 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
+const courses = require('./data');
 
 const server = express();
 
@@ -34,7 +35,8 @@ server.get('/', function(req, res) {
 });
 
 server.get('/courses', function(req, res) {
-  return res.render('courses');
+  console.log(courses[0].image);
+  return res.render('courses', { courses });
 });
 
 server.use(function(req, res) {

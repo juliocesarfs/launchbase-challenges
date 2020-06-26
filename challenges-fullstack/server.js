@@ -1,6 +1,7 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const courses = require('./data');
+const { indexOf } = require('./data');
 
 const server = express();
 
@@ -35,8 +36,19 @@ server.get('/', function(req, res) {
 });
 
 server.get('/courses', function(req, res) {
-  console.log(courses[0].image);
   return res.render('courses', { courses });
+});
+
+server.get('/courses/:id', function(req, res) {
+  const id = req.params.id;
+  let index;
+
+  for (let course of courses) {
+    if (id === course.name)
+      index = courses.indexOf(course);
+  }
+  
+  return res.render('course', { course: courses[index] });
 });
 
 server.use(function(req, res) {

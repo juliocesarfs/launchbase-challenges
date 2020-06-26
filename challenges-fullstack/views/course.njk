@@ -1,0 +1,26 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+  <title>Cursos - Rocketseat</title>
+{% endblock %}
+
+{% block content %}
+
+  <div class="course" id="{{ course.name }}">
+    <div class="course-{{ course.name }}">
+      <div class="course-img">
+        <img src="{{ course.image }}" alt="">
+      </div>
+
+      <div class="description">
+        <p><p class="{{ course.name }}">{{ course.description }}</p>
+      </div>
+
+      <div class="course-modules">
+        <p>{{ course.modules }} modulos</p>
+        <p class="course-price">{{ course.price }}</p>
+      </div>
+    </div>
+  </div>
+    
+{% endblock %}

@@ -195,6 +195,69 @@ iframe {
 
 /* === COURSE === */
 
+.course-description {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.course-description p {
+  font-size: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  font-weight: bold;
+}
+
+.course-description a {
+  font-size: 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: var(--color-purple);
+  color: white;
+}
+
+.course-description.starter a:hover{
+  filter: brightness(120%);
+  transition: 200ms;
+}
+
+.course-information {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.course-information img {
+  width: 300px;
+}
+
+.course-information h3 {
+  padding-top: 30px;
+}
+
+.course-technologies {
+  padding-top: 20px;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  width: 100px;
+  margin-right: 51.1%;
+}
+
+.technology img {
+  width: 100px;
+}
+
+.technology p {
+  text-align: center;
+  margin-top: 2px;
+}
 
 

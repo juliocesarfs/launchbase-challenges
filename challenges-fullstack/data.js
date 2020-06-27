@@ -1,23 +1,47 @@
 module.exports = [
   {
+    id: 'zero',
     name: 'starter',
     image: 'https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg',
     description: 'Torne-se um programador desejado</p> no mercado com esses cursos gratuitos',
     modules: '5',
-    price: 'Free'
+    price: 'Free',
+    detail: 'Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado',
+    technologies: [
+      { name: 'Javascript', image: 'https://rocketseat.com.br/static/images/update/curso-javascript.svg' },
+      { name: 'NodeJS', image: 'https://rocketseat.com.br/static/images/update/curso-nodejs.svg' },
+      { name: 'React', image: 'https://rocketseat.com.br/static/images/update/curso-reactjs.svg' },
+      { name: 'React Native', image: 'https://rocketseat.com.br/static/images/update/curso-react-native.svg' }
+    ]
   },
   {
+    id: 'one',
     name: 'launchbase',
     image: 'https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg',
     description: 'Domine a programação do zero</p> e tenha acesso às melhores oportunidades do mercado',
     modules: '16',
-    price: 'Pago'
+    price: 'Pago',
+    detail: 'Vá direto ao ponto naquilo que realmente importa para alcançar seus maiores objetivos como dev',
+    technologies: [
+      { name: 'Javascript', image: 'https://rocketseat.com.br/static/images/update/curso-javascript.svg' },
+      { name: 'NodeJS', image: 'https://rocketseat.com.br/static/images/update/curso-nodejs.svg' },
+      { name: 'HTML', image: 'https://xesque.rocketseat.dev/platform/1579616427662.svg' },
+      { name: 'CSS', image: 'data:image/jpeg;base64,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' }
+    ]
   },
   {
+    id: 'two',
     name: 'gostack',
     image: 'https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg',
     description: 'Treinamento imersivo</p> nas tecnologias mais modernas de desenvolvimento web e mobile',
     modules: '20',
-    price: 'Pago'
+    price: 'Pago',
+    detail: 'Domine o back-end, o front-end e o mobile através do método que vai te guiar direto ao ponto na direção dos seus objetivos',
+    technologies: [
+      { name: 'Javascript', image: 'https://rocketseat.com.br/static/images/update/curso-javascript.svg' },
+      { name: 'NodeJS', image: 'https://rocketseat.com.br/static/images/update/curso-nodejs.svg' },
+      { name: 'React', image: 'https://rocketseat.com.br/static/images/update/curso-reactjs.svg' },
+      { name: 'React Native', image: 'https://rocketseat.com.br/static/images/update/curso-react-native.svg' }
+    ]
   }
 ];

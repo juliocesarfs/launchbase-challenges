@@ -215,13 +215,38 @@ iframe {
   text-decoration: none;
   margin: 0 auto;
   padding: 15px;
-  background-color: var(--color-purple);
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
-.course-description.starter a:hover{
-  filter: brightness(120%);
+#starter a {
+  background-color: var(--color-purple);
+}
+
+#launchbase a {
+  background-color: var(--color-yellow);
+}
+
+#gostack a {
+  background-color: var(--color-green);
+}
+
+.course-description a:hover {
+  filter: brightness(110%);
   transition: 200ms;
+}
+
+
+.zero {
+  width: 300px;
+}
+
+.one {
+  width: 510px;
+}
+
+.two {
+  width: 340px;
 }
 
 .course-information {
@@ -229,10 +254,6 @@ iframe {
   margin: 0 auto;
   text-align: center;
   padding-top: 60px;
-}
-
-.course-information img {
-  width: 300px;
 }
 
 .course-information h3 {
@@ -245,14 +266,23 @@ iframe {
   margin: 0 auto;
   display: grid;
   text-align: center;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 500px;
+}
+
+.technology {
   width: 100px;
-  margin-right: 51.1%;
+  margin: 0 auto;
 }
 
 .technology img {
+  border-radius: 5px;
   width: 100px;
+}
+
+.technology img:hover {
+  filter: brightness(110%);
+  transition: 200ms;
 }
 
 .technology p {

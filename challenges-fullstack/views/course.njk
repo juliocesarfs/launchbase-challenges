@@ -7,39 +7,25 @@
 {% block content %}
 
   <section class="course-information">
-    <img src="{{ course.image }}" alt="" class="course_img">
+    <img src="{{ course.image }}" alt="" class="{{ course.id }}">
 
-    <div class="course-description {{ course.name }}">
+    <div class="course-description" id="{{ course.name }}">
       <p>
-        Cursos 100% online e gratuitos para você entrar com o pé direito 
-        nas tecnologias mais desejadas do mercado.
+        {{ course.detail }}
       </p>
-      <a href="/courses/{{ course.name }}"> Confira agora! </a>
+      <a href="https://www.rocketseat.com.br/{{ course.name }}"> Confira agora! </a>
     </div>
     
     <h3>Tecnologias abordadas </h3>
 
     <div class="course-technologies">
-      <div class="technology">
-        <img src="https://rocketseat.com.br/static/images/update/curso-javascript.svg" alt="">
-        <p>Javascript</p>
-      </div>
+      {% for technology in course.technologies %}
+        <div class="technology">
+          <img src="{{ technology.image }}" alt="">
+          <p>{{ technology.name }}</p>
+        </div>
+      {% endfor %}
       
-      <div class="technology">
-        <img src="https://rocketseat.com.br/static/images/update/curso-nodejs.svg" alt="">
-        <p>NodeJS</p>
-      </div>
-      
-      <div class="technology">
-        <img src="https://rocketseat.com.br/static/images/update/curso-reactjs.svg" alt="">
-        <p>React</p>
-      </div>
-      
-      <div class="technology">
-        <img src="https://rocketseat.com.br/static/images/update/curso-react-native.svg" alt="">
-        <p>React Native</p>
-      </div>
-    </div>
 
   </section>
  

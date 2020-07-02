@@ -6,8 +6,8 @@
 - [About](#clipboard-about)
 - [Technologies used](#computer-technologies-used)
 * [How to download and run this project](#📁-how-to-download-and-run-this-project)
-  - [challengesJS tutorial](#-challengesJS-tutorial)
-  - [challenges-fullstack tutorial](#-challenges-fullstack-tutorial)
+  - [challengesJS tutorial](#challengesJS-tutorial)
+  - [challenges-fullstack tutorial](#challenges-fullstack-tutorial)
 
 ---
 

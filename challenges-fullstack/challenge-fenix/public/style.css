@@ -11,18 +11,42 @@ body {
 }
 
 .content {
+  margin-top: 10px;
+  position: absolute;
   max-width: 1070px;
-  padding: 0 300px;
+  padding: 0 200px;
+  
 }
 
 header {
   height: 100px;
   width: 100%;
   background-color: #FCE3C8;
-  display: flex;
+  
 }
 
 header nav {
   display: flex;
   align-items: center;
+}
+
+header nav .separation {
+  width: 1px;
+  height: 50px;
+  margin: 0px 20px;
+  background-color: #C94B32;
+}
+
+header nav .links {
+  margin-top: 10px;
+}
+
+header nav .links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+header nav .links a + a {
+  margin-left: 20px;
 }

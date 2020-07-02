@@ -50,7 +50,7 @@ To run the code in exercises that contain **only JavaScript** it is necessary to
 ``` 
 
 ### challenges-fullstack tutorial
-To run the project **challenges-fullstack** it is necessary to navigate to the file folder (challenges-fullstack) and run:
+To run the project **challenges-fullstack** it is necessary to navigate to the file folder (challenges-fullstack/<folder-name>) and run:
 ```bash
   # Install dependences
   npm install
@@ -68,6 +68,6 @@ localhost:5000
 
 ---
 
-Being developed :purple_heart: exclusively by ***Júlio César***
+Being developed :purple_heart: exclusively by [***Júlio César***](https://github.com/juliocesarfs)
  
 

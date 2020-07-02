@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="launchbase-logo.png">
+  <img src="launchbase-logo.png" width="400px">
 </h1>
 
 # :book: Index

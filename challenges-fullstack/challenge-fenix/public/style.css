@@ -97,5 +97,69 @@ header nav .links a:hover::after {
   background: var(--color-header);
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 300px 500px;
+
+  box-shadow: 0px 2px 6px -2px var(--color-fenix);
+  border-radius: 10px;
+
+  animation: up 400ms ease;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card .avatar {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.details {
+  padding: 32px;
+}
+
+.details .item {
+  border-bottom: 1px solid var(--color-body);
+  padding: 16px 0;
+}
+
+.details .item:last-child {
+  border-bottom: none;
+}
+
+.details .item div:nth-child(1) {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  font-weight: normal;
+  color: #777;
+}
+
+.details .item div:nth-child(2) {
+  color: white;
+  font-size: 18px;
+}
+
+.details h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-body);
+}
+
+.details .item span {
+  padding: 8px 16px;
+  background-color: var(--color-fenix);
+  border-radius: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
 }

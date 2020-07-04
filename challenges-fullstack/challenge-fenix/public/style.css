@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  height: 100px;
+  height: 90px;
   width: 100%;
   background-color: var(--color-header);
   
@@ -41,6 +41,7 @@ header nav {
 
 header nav img {
   width: 150px;
+  margin-top: -8px;
 }
 
 header nav .separation {
@@ -48,10 +49,11 @@ header nav .separation {
   height: 50px;
   margin: 0px 20px;
   background-color: var(--color-fenix);
+  margin-top: 5px;
 }
 
 header nav .links {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 header nav .links a {

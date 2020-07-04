@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --color-header: rgb(36, 31, 31);
+  --color-fenix: #C94B32;
+  --color-body: #81604C;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  
+  background: var(--color-body);
 }
 
 .content {
@@ -22,7 +30,7 @@ body {
 header {
   height: 100px;
   width: 100%;
-  background-color: black;
+  background-color: var(--color-header);
   
 }
 
@@ -39,7 +47,7 @@ header nav .separation {
   width: 1px;
   height: 50px;
   margin: 0px 20px;
-  background-color: #C94B32;
+  background-color: var(--color-fenix);
 }
 
 header nav .links {
@@ -59,18 +67,18 @@ header nav .links a + a {
 
 header nav .links a.active {
   font-weight: bold;
-  color: #C94B32;
+  color: var(--color-fenix);
 }
 
 header nav .links a:hover {
-  color: #C94B32;
+  color: var(--color-fenix);
 }
 
 header nav .links a::after {
   content: "";
   width: 0;
   height: 1px;
-  background-color: #C94B32;
+  background-color: var(--color-fenix);
   position: absolute;
   left: 0;
   bottom: -4px;
@@ -79,4 +87,15 @@ header nav .links a::after {
 header nav .links a:hover::after {
   width: 100%;
   transition: width 200ms ease-in-out;
+}
+
+/* === CARD === */
+.card {
+  width: 800px;
+  min-height: 400px;
+  margin: 45px auto;
+  background: var(--color-header);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

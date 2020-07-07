@@ -25,6 +25,7 @@ this README is still in progress and will be updated according to my evolution i
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 - [nunjucks](https://mozilla.github.io/nunjucks/)
 - [nodemon](https://nodemon.io/)
+- [Browser-Sync](https://www.browsersync.io/)
 
 ---
 

@@ -167,12 +167,16 @@ header nav .links a:hover::after {
 }
 
 /*=== FORM === */
-form input, select, option {
+form input, select, option, button {
   color: black;
+  background-color: var(--color-body);
+  border-radius: 10px;
 }
 form input {
   width: 100%;
   outline: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 input[type="radio"] {
@@ -180,7 +184,23 @@ input[type="radio"] {
   margin-right: 4px;
 }
 
+input[type="date"] {
+  width: initial;
+}
+
 input::placeholder {
   font-size: 16px;
   font-weight: normal;
+  color: var(--color-header);
+}
+
+button[type="submit"] {
+  padding: 8px 32px;
+  background-color: var(--color-fenix);
+  border-radius: 4px;
+  margin-top: 32px;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
 }

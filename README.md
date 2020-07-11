@@ -2,7 +2,7 @@
   <img src="launchbase-logo.png" width="400px">
 </h1>
 
-# :book: Index
+# :book: Table of Contents
 - [About](#clipboard-about)
 - [Technologies used](#computer-technologies-used)
 * [How to download and run this project](#📁-how-to-download-and-run-this-project)
@@ -51,7 +51,7 @@ To run the code in exercises that contain **only JavaScript** it is necessary to
 ``` 
 
 ### challenges-fullstack tutorial
-To run the project **challenges-fullstack** it is necessary to navigate to the file folder (challenges-fullstack/<folder-name>) and run:
+To run the project **challenges-fullstack** it is necessary to navigate to the file folder (challenges-fullstack/challenge-(challenge-name)) and run:
 ```bash
   # Install dependences
   npm install

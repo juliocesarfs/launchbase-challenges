@@ -171,6 +171,7 @@ form input, select, option, button {
   color: black;
   background-color: var(--color-body);
   border-radius: 10px;
+  border: none;
 }
 form input {
   width: 100%;
@@ -192,6 +193,7 @@ input::placeholder {
   font-size: 16px;
   font-weight: normal;
   color: var(--color-header);
+  padding-left: 5px;
 }
 
 button[type="submit"] {
